@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🧠 AI Swiss Workflows</h1>
+  <h1>🧠 AI Workflows</h1>
   <p><i>Maîtrisez l'IA avec des workflows systématiques, reproductibles et évolutifs. Sans interfaces gadgets, sans enfermement propriétaire.</i></p>
   
   [![YouTube - Cursor AI](https://img.shields.io/badge/YouTube-Cursor_AI-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=niPQvA7uxxk)

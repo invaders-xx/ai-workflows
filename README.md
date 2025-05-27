@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🧠 AI Swiss Workflows</h1>
+  <h1>🧠 AI Workflows</h1>
   <p><i>Master AI with systematic, repeatable workflows that scale. No toy interfaces, no vendor lock-in.</i></p>
   
   [![YouTube - Cursor AI](https://img.shields.io/badge/YouTube-Cursor_AI-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=niPQvA7uxxk)
