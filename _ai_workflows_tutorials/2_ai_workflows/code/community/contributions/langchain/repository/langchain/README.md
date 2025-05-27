@@ -1,0 +1,1 @@
+Pour pouvoir exécuter le workflow dans `code/community/contributions/langchain/_workflows/issue_contribution/`, téléchargez et placez ici (dans le dossier `langchain`) le code de ce dépôt GitHub : https://github.com/langchain-ai/langchain

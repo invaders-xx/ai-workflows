@@ -1,0 +1,53 @@
+# Package configuration file.
+
+[build-system]
+requires = ['poetry-core>=1.8.0']
+build-backend = 'poetry.core.masonry.api'
+
+[tool.poetry]
+name = 'ai_workflows'
+version = '1.0.0'
+description = 'Framework for building and executing AI-powered workflow automation'
+license = 'MIT'
+authors = [
+    'Charles-Edouard Bardyn <charles-edouard.bardyn@example.com>',
+]
+readme = 'README.md'
+repository = 'https://github.com/cbardyn/ai-swiss-workflows'
+keywords = ['ai', 'workflow', 'automation', 'langchain', 'llm']
+classifiers = [
+    'Development Status :: 4 - Beta',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Programming Language :: Python :: 3.10',
+]
+packages = [
+    {include = 'ai_workflows', from = 'src'},
+]
+
+[tool.poetry.dependencies]
+python = '>=3.10,<3.11'
+
+# Core dependencies
+langchain = '^0.3.11'
+langchain-core = '^0.3.24'
+langchain-community = '^0.3.11'
+langchain-huggingface = '^0.1.2'
+langchain-qdrant = '^0.2.0'
+langchain-unstructured = '^0.1.6'
+langgraph = '^0.2.59'
+
+# LLM providers
+langchain-groq = '^0.2.1'
+
+# Embeddings and vector store
+qdrant-client = '^1.12.1'
+sentence-transformers = '^3.3.1'
+torch = '2.2.2'  # Temporary pin
+
+# Utilities
+beautifulsoup4 = '^4.12.3'
+httpx = '^0.28.1'
+pydantic = '>=2.9.2,<2.10.0'
+python-dotenv = '^1.0.1'
+pyyaml = '^6.0.2'

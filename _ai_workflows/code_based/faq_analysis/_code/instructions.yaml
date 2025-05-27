@@ -1,0 +1,139 @@
+key: 'faq_analysis'
+version: '1.0.0'
+
+goal: |
+  Analyze an existing FAQ, identify uncovered questions, and generate answer suggestions to enrich the FAQ.
+
+requirements: |
+  - Extract Q&A pairs from a URL
+  - Analyze new user questions
+  - Generate relevant suggestions
+
+specifications: |
+  Writing style for suggested answers:
+  - Clear and professional
+  - Concise but complete
+  - Consistent with existing answers' style
+  - Structured for easy reading
+
+context:
+  faq_url:
+    type: 'url'
+    path: 'https://www.letemps.ch/questions-frequentes'
+    priority: 5  # 1 to 5
+  
+  new_questions:
+    type: 'file'
+    path: '../_context/new_questions.md'
+    priority: 5  # 1 to 5
+
+tasks:
+  - key: 'extract_faq'
+    description: |
+      - Analyze the provided web page
+      - Extract ALL question-answer pairs
+      - Structure the data as follows:
+        ```markdown
+        # Existing FAQ
+        
+        ## Extracted Q&As
+        ### Q1: <question>
+        <answer>
+        
+        ### Q2: <question>
+        <answer>
+
+        Etc.
+        ```
+    inputs:
+      - from_context: ['faq_url']
+    outputs:
+      - key: 'existing_faq'
+        file: '_output/1_existing_faq.md'
+
+  - key: 'analyze_questions'
+    description: |
+      - Compare with existing FAQ
+      - Identify uncovered questions
+      - Evaluate relevance for the FAQ
+      - Record in this format:
+        ```markdown
+        # New Questions Analysis
+        
+        ## Uncovered Questions
+        1. <question>
+          - Relevance: <score/5>
+          - Justification: <why this question is relevant>
+        
+        ## Questions Similar to Existing Ones
+        1. <new question>
+          - Corresponds to: Q<n> in existing FAQ
+          - Differences: <analysis of nuances>
+        ```
+      - Don't skip any question!
+    inputs:
+      - from_context: ['new_questions']
+      - from_tasks: [['extract_faq', 'existing_faq']]
+    outputs:
+      - key: 'questions_analysis'
+        file: '_output/2_questions_analysis.md'
+
+  - key: 'generate_suggestions'
+    description: |
+      For each relevant new question:
+      - Generate 2 different answer proposals
+      - Adapt style to match existing FAQ tone
+      - Record in this format:
+        ```markdown
+        # Answer Suggestions
+        
+        ## Question 1: <question>
+        
+        ### Suggestion 1.1
+        <answer>
+        
+        ### Suggestion 1.2
+        <answer>
+        ```
+    inputs:
+      - from_tasks: [
+          ['extract_faq', 'existing_faq'],
+          ['analyze_questions', 'questions_analysis']
+        ]
+    outputs:
+      - key: 'suggestions'
+        file: '_output/3_suggestions.md'
+
+  - key: 'create_report'
+    description: |
+      Create a report consolidating:
+      - Analysis summary from `questions_analysis`
+      - List of new questions from `new_questions`
+      - Answer suggestions from `suggestions`
+      - Prioritization recommendations based on relevance scores
+    inputs:
+      - from_tasks: [
+          ['analyze_questions', 'questions_analysis'],
+          ['generate_suggestions', 'suggestions']
+        ]
+    outputs:
+      - key: 'final_report'
+        file: '_output/4_report.md'
+
+  - key: 'validate_outputs'
+    description: |
+      Verify:
+      - [ ] Complete extraction of existing FAQ
+      - [ ] Relevance of identified new questions
+      - [ ] Quality and consistency of suggested answers
+      - [ ] Report format and structure
+    inputs:
+      - from_tasks: [
+          ['extract_faq', 'existing_faq'],
+          ['analyze_questions', 'questions_analysis'],
+          ['generate_suggestions', 'suggestions'],
+          ['create_report', 'final_report']
+        ]
+    outputs:
+      - key: 'validation_report'
+        file: '_output/5_validation.md'

@@ -1,0 +1,36 @@
+# Technical settings for the AI workflow
+#
+# IMPORTANT: Replace 'api_key' below with your own Groq API key.
+# 
+# Yes, storing API keys directly in config files is not secure in principle, but we want to keep it simple here.
+# Better options:
+# 1. Use environment variables (e.g., GROQ_API_KEY)
+# 2. Or, better, use an encrypted secrets file (e.g., with Mozilla SOPS)
+
+# AI model settings
+llm:
+  type: 'langchain_groq.ChatGroq'        # Use Groq models
+  temperature: 0                         # How creative (0 = very focused)
+  model_name: 'llama-3.3-70b-versatile'  # Specific model version (see https://console.groq.com/docs/models)
+  api_key: 'your-groq-api-key-here'      # Replace with your API key!
+  max_tokens: 4096                       # Maximum response length
+  rate_limiter:                          # Controls how fast we can use the API
+    type: 'langchain_core.rate_limiters.InMemoryRateLimiter'
+    # Settings based on Groq's limits (see https://console.groq.com/settings/limits)
+    requests_per_second: 5.0 / 60         # Stay under 30 requests/minute limit
+    check_every_n_seconds: 0.1            # Check every 100ms if we can make a request
+    max_bucket_size: 1                    # Allow "bursts" of just 1 request
+
+# Text embeddings model settings
+embeddings:
+  type: 'langchain_huggingface.HuggingFaceEmbeddings'  # Model for finding similar text
+  model_name: 'all-MiniLM-L6-v2'                       # Fast, efficient model
+  model_kwargs:
+    device: 'cpu'                                      # Run on CPU
+
+# Information handling settings
+context:
+  max_docs_per_source: 5     # How many documents to use from each source
+  chunk_size: 3000           # Characters per text piece
+  chunk_overlap: 300         # How much text pieces should overlap
+  recreate_collection: true  # Start with fresh database

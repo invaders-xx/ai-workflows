@@ -1,0 +1,138 @@
+2024-12-20 10:57:34,652 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-12-20 10:57:37,331 - ai_workflows.context - INFO - Setting up vector store in: _output/_data/faq_analysis
+2024-12-20 10:57:37,341 - ai_workflows.context - INFO - Found existing collection with 6 documents
+2024-12-20 10:57:37,341 - ai_workflows.context - INFO - Creating new collection faq_analysis
+2024-12-20 10:57:39,027 - ai_workflows.context - INFO - Vector store setup complete
+2024-12-20 10:57:39,030 - ai_workflows.workflow - INFO - Starting workflow: faq_analysis
+2024-12-20 10:57:39,030 - ai_workflows.context - INFO - Loading 2 sources
+2024-12-20 10:57:39,030 - ai_workflows.context - INFO - Loading source: faq_url from https://www.letemps.ch/questions-frequentes
+2024-12-20 10:57:39,030 - ai_workflows.context - INFO - Loading source: faq_url (url) from https://www.letemps.ch/questions-frequentes
+2024-12-20 10:57:39,429 - ai_workflows.context - INFO - Raw document metrics for faq_url:
+- Documents: 1
+- Total size: 12,540 chars
+- Average size: 12,540 chars/doc
+2024-12-20 10:57:39,430 - ai_workflows.context - INFO - Chunk metrics for faq_url:
+- Chunks: 5
+- Total size: 13,017 chars
+- Average chunk: 2,603 chars
+- Size ratio: 103.8% of original
+2024-12-20 10:57:39,695 - ai_workflows.context - INFO - Vector store update for faq_url:
+- Previous docs: 0
+- Added docs: 5
+- Current docs: 5
+2024-12-20 10:57:39,698 - ai_workflows.context - INFO - Collection now has 5 documents
+2024-12-20 10:57:39,698 - ai_workflows.context - INFO - Loading source: new_questions from /Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows/code_based/faq_analysis/_context/new_questions.md
+2024-12-20 10:57:39,698 - ai_workflows.context - INFO - Loading source: new_questions (file) from /Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows/code_based/faq_analysis/_context/new_questions.md
+2024-12-20 10:57:39,699 - ai_workflows.context - INFO - Raw document metrics for new_questions:
+- Documents: 1
+- Total size: 328 chars
+- Average size: 328 chars/doc
+2024-12-20 10:57:39,700 - ai_workflows.context - INFO - Chunk metrics for new_questions:
+- Chunks: 1
+- Total size: 328 chars
+- Average chunk: 328 chars
+- Size ratio: 100.0% of original
+2024-12-20 10:57:39,736 - ai_workflows.context - INFO - Vector store update for new_questions:
+- Previous docs: 5
+- Added docs: 1
+- Current docs: 6
+2024-12-20 10:57:39,736 - ai_workflows.context - INFO - Collection now has 6 documents
+2024-12-20 10:57:39,741 - ai_workflows.graph - INFO - 
+==================================================
+Task 1/5 (20%): extract_faq
+- Description: - Analyze the provided web page
+- Extract ALL question-answer pairs
+- Structure the data as follows:...
+- Required inputs: 1
+- Expected outputs: 1
+==================================================
+2024-12-20 10:57:39,741 - ai_workflows.graph - INFO - Fetching context from sources: ['faq_url']
+2024-12-20 10:57:39,741 - ai_workflows.context - INFO - Searching context:
+- Query: - Analyze the provided web page - Extract ALL question-answer pairs - Structure the data as follows:...
+- Query length: 236 chars
+- Sources: faq_url
+- Max docs: 5
+2024-12-20 10:57:39,781 - ai_workflows.context - INFO - Search results overview:
+- Found documents: 5
+- Search time: 0.039s
+- Best match: 18.9%
+- Average match: 11.6%
+- Weakest match: 4.7%
+2024-12-20 10:57:39,781 - ai_workflows.context - INFO - Final context assembly:
+- Documents used: 5
+- Total size: 13,106 chars
+- Average chunk: 2,621 chars
+- Sources used: faq_url
+- Source coverage: 1/1
+2024-12-20 10:57:39,782 - ai_workflows.graph - INFO - Context summary for extract_faq:
+- Parts: 1
+- Total size: 13,106 chars
+- Average part size: 13,106 chars
+2024-12-20 10:57:41,370 - ai_workflows.graph - ERROR - Error executing extract_faq:
+- Error type: AuthenticationError
+- Error message: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/src/ai_workflows/graph.py", line 304, in node_function
+    response = llm.invoke(messages)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 286, in invoke
+    self.generate_prompt(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 786, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 643, in generate
+    raise e
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 633, in generate
+    self._generate_with_cache(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 851, in _generate_with_cache
+    result = self._generate(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_groq/chat_models.py", line 474, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/groq/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2024-12-20 10:57:41,382 - __main__ - ERROR - Workflow execution failed: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows/code_based/faq_analysis/_code/run.py", line 51, in main
+    result = workflow.run()
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/src/ai_workflows/workflow.py", line 250, in run
+    final_state = self._graph.invoke(initial_state)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langgraph/pregel/__init__.py", line 1936, in invoke
+    for chunk in self.stream(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langgraph/pregel/__init__.py", line 1656, in stream
+    for _ in runner.tick(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langgraph/pregel/runner.py", line 167, in tick
+    run_with_retry(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langgraph/pregel/retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langgraph/utils/runnable.py", line 408, in invoke
+    input = step.invoke(input, config, **kwargs)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langgraph/utils/runnable.py", line 184, in invoke
+    ret = context.run(self.func, input, **kwargs)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/src/ai_workflows/graph.py", line 304, in node_function
+    response = llm.invoke(messages)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 286, in invoke
+    self.generate_prompt(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 786, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 643, in generate
+    raise e
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 633, in generate
+    self._generate_with_cache(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_core/language_models/chat_models.py", line 851, in _generate_with_cache
+    result = self._generate(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/langchain_groq/chat_models.py", line 474, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/groq/resources/chat/completions.py", line 298, in create
+    return self._post(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/groq/_base_client.py", line 1263, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/groq/_base_client.py", line 955, in request
+    return self._request(
+  File "/Users/ch1962/Documents/AI Swiss/Repositories/ai-swiss-workflows/_ai_workflows_tutorials/3_ai_workflows_as_code/_ai_workflows_packages/ai_workflows/.venv/lib/python3.10/site-packages/groq/_base_client.py", line 1058, in _request
+    raise self._make_status_error_from_response(err.response) from None
+groq.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}

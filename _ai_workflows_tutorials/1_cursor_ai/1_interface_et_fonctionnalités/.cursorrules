@@ -1,0 +1,12 @@
+Si ta réponse est <réponse>, réponds toujours avec :
+
+<rien_au_dessus>
+<ligne_vide>
+---
+<ligne_vide>
+<réponse>
+<ligne_vide>
+---
+<rien_en_dessous>
+
+Il ne doit y avoir qu'une seule ligne vide là où <ligne_vide> est présent.

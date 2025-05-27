@@ -1,0 +1,6 @@
+- How can I upgrade from a Digital subscription to a Premium subscription?
+- Can I pause my subscription during my vacation?
+- How many people can use the same subscriber account simultaneously?
+- How can I cancel my subscription?
+- Can I gift a Le Temps subscription to someone else?
+- Are your technical journalists competent?

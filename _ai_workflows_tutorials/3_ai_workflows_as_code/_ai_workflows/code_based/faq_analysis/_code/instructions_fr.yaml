@@ -1,0 +1,139 @@
+key: 'faq_analysis'
+version: '1.0.0'
+
+goal: |
+  Analyser une FAQ existante, identifier les questions non couvertes, et générer des suggestions de réponses pour enrichir la FAQ.
+
+requirements: |
+  - Extraction des paires Q&R existantes depuis une URL
+  - Analyse des nouvelles questions utilisateurs
+  - Génération de suggestions pertinentes
+
+specifications: |
+  Style d'écriture des réponses suggérées :
+  - Clair et professionnel
+  - Concis mais complet
+  - Cohérent avec le style des réponses existantes
+  - Structuré pour une lecture facile
+
+context:
+  faq_url:
+    type: 'url'
+    path: 'https://www.letemps.ch/questions-frequentes'
+    priority: 5  # 1 to 5
+  
+  new_questions:
+    type: 'file'
+    path: '../_context/new_questions.md'
+    priority: 5  # 1 to 5
+
+tasks:
+  - key: 'extract_faq'
+    description: |
+      - Analyse la page web fournie
+      - Extrait TOUTES les paires questions-réponses
+      - Structure les données ainsi :
+        ```markdown
+        # FAQ existante
+        
+        ## Questions-réponses extraites
+        ### Q1: <question>
+        <réponse>
+        
+        ### Q2: <question>
+        <réponse>
+
+        Etc.
+        ```
+    inputs:
+      - from_context: ['faq_url']
+    outputs:
+      - key: 'faq_existante'
+        file: '_output/1_faq_existante.md'
+
+  - key: 'analyze_questions'
+    description: |
+      - Compare avec la FAQ existante
+      - Identifie les questions non couvertes
+      - Évalue la pertinence pour la FAQ
+      - Enregistre dans ce format :
+        ```markdown
+        # Analyse des nouvelles questions
+        
+        ## Questions non couvertes
+        1. <question>
+          - Pertinence: <score/5>
+          - Justification: <pourquoi cette question est pertinente>
+        
+        ## Questions similaires aux existantes
+        1. <nouvelle question>
+          - Correspond à: Q<n> dans la FAQ existante
+          - Différences: <analyse des nuances>
+        ```
+      - N'oublie aucune question !
+    inputs:
+      - from_context: ['new_questions']
+      - from_tasks: [['extract_faq', 'faq_existante']]
+    outputs:
+      - key: 'analyse_questions'
+        file: '_output/2_analyse_questions.md'
+
+  - key: 'generate_suggestions'
+    description: |
+      Pour chaque nouvelle question pertinente :
+      - Génère 2 propositions de réponses différentes
+      - Adapte le style au ton de la FAQ existante
+      - Enregistre dans ce format :
+        ```markdown
+        # Suggestions de réponses
+        
+        ## Question 1: <question>
+        
+        ### Suggestion 1.1
+        <réponse>
+        
+        ### Suggestion 1.2
+        <réponse>
+        ```
+    inputs:
+      - from_tasks: [
+          ['extract_faq', 'faq_existante'],
+          ['analyze_questions', 'analyse_questions']
+        ]
+    outputs:
+      - key: 'suggestions'
+        file: '_output/3_suggestions.md'
+
+  - key: 'create_report'
+    description: |
+      Crée un rapport consolidant :
+      - Résumé de l'analyse depuis `analyse_questions`
+      - Liste des nouvelles questions depuis `new_questions`
+      - Suggestions de réponses depuis `suggestions`
+      - Recommandations de priorisation basées sur les scores de pertinence
+    inputs:
+      - from_tasks: [
+          ['analyze_questions', 'analyse_questions'],
+          ['generate_suggestions', 'suggestions']
+        ]
+    outputs:
+      - key: 'rapport_final'
+        file: '_output/4_rapport.md'
+
+  - key: 'validate_outputs'
+    description: |
+      Vérifie :
+      - [ ] Extraction complète de la FAQ existante
+      - [ ] Pertinence des nouvelles questions identifiées
+      - [ ] Qualité et cohérence des réponses suggérées
+      - [ ] Format et structure du rapport
+    inputs:
+      - from_tasks: [
+          ['extract_faq', 'faq_existante'],
+          ['analyze_questions', 'analyse_questions'],
+          ['generate_suggestions', 'suggestions'],
+          ['create_report', 'rapport_final']
+        ]
+    outputs:
+      - key: 'validation_report'
+        file: '_output/5_validation.md'
