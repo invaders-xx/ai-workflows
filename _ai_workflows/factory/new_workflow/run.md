@@ -1,11 +1,11 @@
-# Creating a new workflow
+# Création d'un nouveau workflow
 
 ## Instructions
-@instructions_v1.0.0.md
+[text](instructions/instructions_v1.0.0.md)
 
 ## Description
-Create a new workflow to...
-...send personalized outreach emails based on LinkedIn profiles
+Créer un nouveau workflow pour...
+...géréner une campagne marketing sur LinkedIn pour ma société de courtage immobilier
 
-## Context
+## Contexte
 @Codebase

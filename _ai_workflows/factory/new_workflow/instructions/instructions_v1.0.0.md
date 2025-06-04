@@ -1,44 +1,44 @@
-| Version | Date | Description | Human |
+| Version | Date | Description | Humain |
 | :- | :- | :- | :- |
-| 1.0.0 | 2024-11-26 | Initial instructions | Charles-Edouard Bardyn |
+| 1.0.0 | 2024-11-26 | Instructions initiales | David VINCENT |
 
 # Instructions
 
-## Goal
+## But
 
-Generate the necessary files for a new workflow, taking inspiration from existing workflows.
+Générer les fichiers nécessaires pour un nouveau workflow, en s'inspirant des workflows existants.
 
-## Requirements
+## Besoins
 
-IMPORTANT: Create these files in the existing `_ai_workflows/factory/new_workflow/` folder, in a sub-folder `_generated/<workflow_name>/`:
-- A new `run.md` file
-- An `instructions` folder containing a file `instructions_v1.0.0.md`
+IMPORTANT : Crée ces fichiers dans le dossier `_ai_workflows/_generated/_workflows/` existant, dans un sous-dossier `<nom_du_workflow>/` :
+- Un nouveau fichier `run.md`
+- Un dossier `instructions` contenant un fichier `instructions_v1.0.0.md`
 
-Folder structure to create:
+Structure de dossier à créer :
   ```
-  _ai_workflows/factory/new_workflow/_generated/
-    <workflow_name>/
+  _ai_workflows/_generated/_workflows/
+    <nom_du_workflow>/
       instructions/
         instructions_v1.0.0.md
       run.md
   ```
-Do NOT modify any existing files!
+Ne modifie PAS de fichier existant !
 
 ## Specifications
 
 N/A
 
-## Tasks
+## Tâches
 
-### 0. Input Collection
-- Ask the user for all necessary inputs:
-  * Description: Description of the workflow
-  * Context: @Codebase for access to existing workflows
-- Do NOTHING until ALL inputs have been provided.
+### 0. Collecte des inputs
+- Demande à l'utilisateur tous les inputs nécessaires :
+  * Description : Description du workflow
+  * Contexte : @Codebase pour l'accès aux workflows existants
+- Ne fais RIEN tant que TOUS les inputs n'ont pas été fournis.
 
-### 1. Workflow File Generation
-Taking inspiration from existing workflows in @Codebase.
+### 1. Génération des fichiers du workflow
+En s'inspirant des workflows existants dans @Codebase.
 
 ### 2. Validation
-Verify:
-- [ ] The workflow's consistency with the given description
+Vérifie :
+- [ ] La cohérence du workflow par rapport à la description donnée

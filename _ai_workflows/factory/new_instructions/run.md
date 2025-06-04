@@ -1,14 +1,14 @@
-# Creating a new instructions file
+# Création d'un nouveau workflow
 
 ## Instructions
-@instructions_v1.0.0.md
+[text](instructions/instructions_v1.0.0.md)
 
 ## Description
-Create a new instructions file to...
-...build a chatbot with Langchain
+Créer un nouveau fichier d'instructions pour...
+...réaliser un chatbot avec Langchain
 
 ## Template
-@_ai_workflows/templates/instructions_v1.0.0.md
+@_ai_workflows/templates/instructions_v1.0.0_en.md
 
-## Context
+## Contexte
 @Codebase

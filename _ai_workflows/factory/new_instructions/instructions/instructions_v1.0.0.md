@@ -1,43 +1,43 @@
-| Version | Date | Description | Human |
+| Version | Date | Description | Humain |
 | :- | :- | :- | :- |
-| 1.0.0 | 2024-11-26 | Initial instructions | Charles-Edouard Bardyn |
+| 1.0.0 | 2024-11-26 | Instructions initiales | David VINCENT |
 
 # Instructions
 
-## Goal
+## But
 
-Generate a new instructions file for executing a project, drawing inspiration from existing instruction files.
+Générer un nouveau fichier d'instructions pour réaliser un projet, en s'inspirant des fichiers d'instructions existants.
 
-## Requirements
+## Besoins
 
-IMPORTANT: Create this in the existing `_ai_workflows/factory/new_instructions/` folder, in a sub-folder `_generated/<project_name>/`:
-- A folder `instructions` containing a file `instructions_v1.0.0.md`
+IMPORTANT : Crée ceci dans le dossier `_ai_workflows/_generated/_instructions/` existant, dans un sous-dossier `<nom_du_projet>/` :
+- Un dossier `instructions` contenant un fichier `instructions_v1.0.0.md`
 
-Folder structure to create:
+Structure de dossier à créer :
   ```
-  _ai_workflows/factory/new_instructions/_generated/
-    <project_name>/
+  _ai_workflows/_generated/new_instructions/_generated/
+    <nom_du_projet>/
       instructions/
         instructions_v1.0.0.md
   ```
-Do NOT modify any existing files!
+Ne modifie PAS de fichier existant !
 
 ## Specifications
 
 N/A
 
-## Tasks
+## Tâches
 
-### 0. Input Collection
-- Ask the user for all necessary inputs:
-  * Description: Project description
-  * Template: Instructions file template to use
-  * Context: @Codebase for access to existing instructions
-- Do NOTHING until ALL inputs have been provided.
+### 0. Collecte des inputs
+- Demande à l'utilisateur tous les inputs nécessaires :
+  * Description : Description du projet
+  * Template : Template de fichier d'instructions à utiliser
+  * Contexte : @Codebase pour l'accès aux instructions existantes
+- Ne fais RIEN tant que TOUS les inputs n'ont pas été fournis.
 
-### 1. Instructions File Generation
-Based on the template, while also drawing inspiration from existing instruction files in @Codebase.
+### 1. Génération du fichier d'instructions
+A partir du template, en s'inspirant aussi des fichiers d'instructions existants dans @Codebase.
 
 ### 2. Validation
-Verify:
-- [ ] Compliance of the instructions file with the template
+Vérifie :
+- [ ] La conformité du fichier d'instructions par rapport au template
