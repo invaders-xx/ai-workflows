@@ -10,7 +10,7 @@ version = '1.0.0'
 description = 'Framework for building and executing AI-powered workflow automation'
 license = 'MIT'
 authors = [
-    'Charles-Edouard Bardyn <charles-edouard.bardyn@example.com>',
+    'David Vincent <charles-edouard.bardyn@example.com>',
 ]
 readme = 'README.md'
 repository = 'https://github.com/cbardyn/ai-swiss-workflows'

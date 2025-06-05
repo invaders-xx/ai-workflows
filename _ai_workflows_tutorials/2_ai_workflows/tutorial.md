@@ -71,7 +71,7 @@ First, we need a recipe for the workflow. Here's what ours looks like, inspired 
 ```markdown
 | Version | Date       | Description      | Author |
 |---------|------------|------------------|---------|
-| 1.0.0   | 2024-11-26| Initial version  | Charles-Edouard Bardyn |
+| 1.0.0   | 2024-11-26| Initial version  | David Vincent |
 
 # Instructions
 
@@ -409,7 +409,7 @@ Start small, but start now. Each structured workflow is a step toward operationa
 
 ---
 
-Copyright 2024 Cursor AI (with help from Charles-Edouard Bardyn, executing the Tutorial workflow)
+Copyright 2024 Cursor AI (with help from David Vincent, executing the Tutorial workflow)
 
 **Note**: This tutorial is alive! Don't hesitate to share your feedback and improvements. The strength of workflows also comes from the community that uses and evolves them.
 

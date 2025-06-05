@@ -1,7 +1,7 @@
 | Version | Date | Description | Humain |
 | :- | :- | :- | :- |
-| 1.0.0 | 2024-11-12 | Instructions initiales | Charles-Edouard Bardyn |
-| 1.1.0 | 2024-11-12 | Détails apportés par l'IA | Charles-Edouard Bardyn |
+| 1.0.0 | 2024-11-12 | Instructions initiales | David Vincent |
+| 1.1.0 | 2024-11-12 | Détails apportés par l'IA | David Vincent |
 
 
 # Instructions

@@ -71,7 +71,7 @@ Il nous faut d'abord une recette pour le workflow. Voici à quoi ressemble la n�
 ```markdown
 | Version | Date       | Description      | Auteur |
 |---------|------------|------------------|---------|
-| 1.0.0   | 2024-11-26| Version initiale | Charles-Edouard Bardyn |
+| 1.0.0   | 2024-11-26| Version initiale | David Vincent |
 
 # Instructions
 
@@ -412,7 +412,7 @@ Commencez petit, mais commencez maintenant. Chaque workflow structuré est un pa
 
 ---
 
-Copyright 2024 Cursor AI (avec l'aide de Charles-Edouard Bardyn, exécutant du Tutorial workflow)
+Copyright 2024 Cursor AI (avec l'aide de David Vincent, exécutant du Tutorial workflow)
 
 **Note** : Ce tutoriel est vivant ! N'hésitez pas à partager vos retours et améliorations. La force des workflows vient aussi de la communauté qui les utilise et les fait évoluer.
 

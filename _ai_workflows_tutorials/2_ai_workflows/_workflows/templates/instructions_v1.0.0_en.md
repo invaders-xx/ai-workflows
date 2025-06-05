@@ -2,7 +2,7 @@
 
 | Version | Date | Description | Human |
 | :- | :- | :- | :- |
-| 1.0.0 | <YYYY>-<MM>-<DD> | Initial instructions | Charles-Edouard Bardyn |
+| 1.0.0 | <YYYY>-<MM>-<DD> | Initial instructions | David Vincent |
 
 
 # Instructions
