@@ -15,7 +15,7 @@ IMPORTANT : Crée ceci dans le dossier `_ai_workflows/_generated/_instructions/`
 
 Structure de dossier à créer :
   ```
-  _ai_workflows/_generated/new_instructions/_generated/
+  _ai_workflows/_generated/_instructions/
     <nom_du_projet>/
       instructions/
         instructions_v1.0.0.md
