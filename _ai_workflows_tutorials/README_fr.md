@@ -1,4 +1,4 @@
-# Tutoriels IA par AI Swiss
+# Tutoriels IA par DV-Conseil
 
 Bienvenue dans notre collection de tutoriels IA de niveau professionnel ! Ces contenus sont issus des sessions Brain2Brain.Lab, où nous transformons des concepts IA complexes en connaissances pratiques et exploitables.
 
@@ -30,7 +30,7 @@ Situé dans `3_ai_workflows_as_code/`
 Portez vos workflows IA au niveau supérieur avec les meilleures pratiques du génie logiciel. Apprenez à créer des solutions maintenables, versionnées et évolutives qui grandissent avec vos besoins.
 
 **Commencez ici** : `3_ai_workflows_as_code/tutorial_fr.md`  
-📺 **Voir la série** : [Chaîne AI Swiss](https://www.youtube.com/@A-Iswiss)
+📺 **Voir la série** : [Chaîne DV-Conseil](https://www.youtube.com/@A-Iswiss)
 
 ## 🎓 À propos de Brain2Brain.Lab
 

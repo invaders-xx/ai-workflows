@@ -6,7 +6,7 @@
 
 ## Goal
 
-Generate personalized response options to recent comments on AI Swiss members' LinkedIn posts.
+Generate personalized response options to recent comments on DV-Conseil members' LinkedIn posts.
 
 ## Output
 

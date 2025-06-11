@@ -46,9 +46,9 @@ Vous jonglez entre ChatGPT, Claude, un éditeur de texte et 10 autres outils ? V
    1015 Lausanne
 
 🎟️ **Réservez votre place maintenant !** 🎯 http://alturl.com/kdjfn
-Membres AI Swiss : gratuit | Non-membres : 25 CHF (apéritif dînatoire inclus)
+Membres DV-Conseilil : gratuit | Non-membres : 25 CHF (apéritif dînatoire inclus)
 
-🤝 Un événement AI Swiss sponsorisé par la Data Science Team de domo.health
+🤝 Un événement DV-Conseilil sponsorisé par la Data Science Team de domo.health
 
 ⚡ PS : 50 places seulement ! Premier arrivé, premier servi.
 

@@ -115,7 +115,7 @@ Generate powerful instructions files and workflows
 Turn your best workflows into code
 
 ### [3. Tutorials](_ai_workflows_tutorials/README.md)
-Follow the tutorials developed for AI Swiss Brain2Brain.Lab workshops
+Follow the tutorials developed for DV-Conseil Brain2Brain.Lab workshops
 
 ## 🎓 Learning Path
 
@@ -132,7 +132,7 @@ Explore the full spectrum between text-based and code-based workflows to find wh
 
 ## 🛠️ About Brain2Brain.Labs
 
-Brain2Brain.Lab workshops by AI Swiss empower people to be agents of change in the AI revolution. We believe:
+Brain2Brain.Lab workshops by DV-Conseil empower people to be agents of change in the AI revolution. We believe:
 - AI understanding shouldn't be limited to tech experts
 - Everyone deserves access to professional-grade AI tools
 - Knowledge sharing creates ripples of positive change in society
@@ -159,5 +159,5 @@ MIT License - make it yours!
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by AI Swiss</sub>
+  <sub>Built with ❤️ by DV-Conseil</sub>
 </div>

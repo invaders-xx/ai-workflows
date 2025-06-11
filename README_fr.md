@@ -115,7 +115,7 @@ Générez des fichiers d'instructions et des workflows puissants
 Transformez vos meilleurs workflows en code
 
 ### [3. Tutoriels](_ai_workflows_tutorials/README_fr.md)
-Suivez les tutoriels développés pour les ateliers AI Swiss Brain2Brain.Lab
+Suivez les tutoriels développés pour les ateliers DV-Conseil Brain2Brain.Lab
 
 ## 🎓 Parcours d'apprentissage
 
@@ -132,7 +132,7 @@ Explorez tout le spectre entre workflows textuels et basés sur le code pour tro
 
 ## 🛠️ À propos des Brain2Brain.Labs
 
-Les ateliers Brain2Brain.Lab par AI Swiss donnent aux gens les moyens d'être des agents du changement dans la révolution de l'IA. Nous croyons que :
+Les ateliers Brain2Brain.Lab par DV-Conseil donnent aux gens les moyens d'être des agents du changement dans la révolution de l'IA. Nous croyons que :
 - La compréhension de l'IA ne devrait pas être limitée aux experts techniques
 - Chacun mérite d'avoir accès à des outils IA de niveau professionnel
 - Le partage des connaissances crée des ondes de changement positif dans la société
@@ -159,5 +159,5 @@ Licence MIT - faites-en le vôtre !
 ---
 
 <div align="center">
-  <sub>Construit avec ❤️ par AI Swiss</sub>
+  <sub>Construit avec ❤️ par DV-Conseil</sub>
 </div>

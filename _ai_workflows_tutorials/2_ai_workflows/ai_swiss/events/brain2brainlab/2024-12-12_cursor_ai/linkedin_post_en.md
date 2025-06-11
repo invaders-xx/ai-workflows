@@ -46,9 +46,9 @@ Are you juggling between ChatGPT, Claude, a text editor, and 10 other tools? Tir
    1015 Lausanne
 
 🎟️ **Reserve your spot now!** 🎯 http://alturl.com/kdjfn
-AI Swiss members: free | Non-members: 25 CHF (networking drinks included)
+DV-Conseil members: free | Non-members: 25 CHF (networking drinks included)
 
-🤝 An AI Swiss event sponsored by domo.health's Data Science Team
+🤝 An DV-Conseil event sponsored by domo.health's Data Science Team
 
 ⚡ PS: Only 50 spots available! First come, first served.
 

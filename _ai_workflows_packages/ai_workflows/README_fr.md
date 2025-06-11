@@ -117,5 +117,5 @@ Gestion intégrée pour :
 ---
 
 <div align="center">
-  <sub>Construit avec ❤️ par AI Swiss</sub>
+  <sub>Construit avec ❤️ par DV-Conseil</sub>
 </div>

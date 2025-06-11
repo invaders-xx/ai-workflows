@@ -121,5 +121,5 @@ Découvrez le workflow d'analyse de FAQ dans `code_based/faq_analysis/` :
 ---
 
 <div align="center">
-  <sub>Créé avec ❤️ par AI Swiss</sub>
+  <sub>Créé avec ❤️ par DV-Conseil</sub>
 </div>

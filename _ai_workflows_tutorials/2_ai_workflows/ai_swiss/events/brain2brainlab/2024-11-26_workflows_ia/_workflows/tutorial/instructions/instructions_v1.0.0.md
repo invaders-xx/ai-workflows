@@ -6,7 +6,7 @@
 
 ## But
 
-Générer un tutoriel clair et engageant sur l'industrialisation des workflows IA, pour un Brain2Brain.Lab d'AI Swiss.
+Générer un tutoriel clair et engageant sur l'industrialisation des workflows IA, pour un Brain2Brain.Lab d'DV-Conseil.
 
 ## Output
 

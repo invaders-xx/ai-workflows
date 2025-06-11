@@ -43,7 +43,7 @@ For a numbered list:
 To create a link, it's like a mini-equation:
 [What people see](the-link-address)
 
-For example: [The AI Swiss website](https://www.a-i.swiss)
+For example: [The DV-Conseil website](https://www.a-i.swiss)
 
 ### To Learn More
 
@@ -62,7 +62,7 @@ Cursor evolves alongside VS Code, benefiting from all its features while enrichi
 
 Cursor is often perceived as a tool reserved for developers, but we'll prove that's wrong: if a tool can handle thousands of interconnected code files, maintain context across different programming languages, and orchestrate coherent modifications on a large scale... wouldn't it be perfect for other types of complex projects?
 
-At AI Swiss, we're convinced that Cursor is currently (as of 2024-11-12) the most powerful editor for working with AI, and we'll show you why.
+At DV-Conseil, we're convinced that Cursor is currently (as of 2024-11-12) the most powerful editor for working with AI, and we'll show you why.
 
 **Note**:
 
@@ -129,7 +129,7 @@ The details:
 Chat has become the basic interface for interacting with AI. To use it in Cursor:
 
 1. Open the chat with `Ctrl/⌘ + Alt/Option + L` (L for "Light of supreme knowledge")
-2. Select an AI model (at AI Swiss, we have a soft spot for `claude-3-5-sonnet`, as of 2024-11-12)
+2. Select an AI model (at DV-Conseil, we have a soft spot for `claude-3-5-sonnet`, as of 2024-11-12)
 3. Ask a question (make a "prompt")
 4. Validate with `Enter` or click `Chat`
 
@@ -193,7 +193,7 @@ Note: Cursor doesn't yet digest PDFs. To use them, copy their content into a tex
 #### 2. Individual Web Pages
 Type `@` followed by the URL:
 ```
-What is AI Swiss's next event? @https://www.a-i.swiss
+What is DV-Conseil's next event? @https://www.a-i.swiss
 ```
 
 Note: Cursor won't explore beyond the mentioned page, so choose well! It's the same on ChatGPT.
@@ -201,10 +201,10 @@ Note: Cursor won't explore beyond the mentioned page, so choose well! It's the s
 #### 3. Websites
 1. Type `@Docs`
 2. Click on `+ Add new doc`
-3. Enter the URL and a simple name (example: `https://www.a-i.swiss` → `AI Swiss`)
+3. Enter the URL and a simple name (example: `https://www.a-i.swiss` → `DV-Conseil`)
 
 ```
-What is AI Swiss's next event? @AI Swiss
+What is DV-Conseil's next event? @DV-Conseil
 ```
 
 Notes:

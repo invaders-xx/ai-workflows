@@ -6,7 +6,7 @@
 
 ## But
 
-Générer des options de réponses personnalisées aux commentaires récents sur les posts LinkedIn des membres AI Swiss.
+Générer des options de réponses personnalisées aux commentaires récents sur les posts LinkedIn des membres DV-Conseil.
 
 ## Output
 

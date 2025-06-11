@@ -6,7 +6,7 @@
 
 ## Goal
 
-Generate a clear and engaging tutorial on AI workflow industrialization for an AI Swiss Brain2Brain.Lab.
+Generate a clear and engaging tutorial on AI workflow industrialization for an DV-Conseil Brain2Brain.Lab.
 
 ## Output
 

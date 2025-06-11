@@ -4,7 +4,7 @@ Vous essayez de réaliser un projet ambitieux sur ChatGPT et vous vous perdez ra
 
 ## L'essentiel : des instructions claires
 
-Les LLMs actuels ne sont pas tout puissants. Ils ne sont pour l'instant capables de réaliser un projet complexe que si on le décompose en étapes simples. Et comme à un nouveau collègue, il faut leur donner des instructions claires sur notre façon de travailler. Même ChatGPT-100o ne saura pas lire dans vos pensées (on espère !).
+Les LLMs actuels ne sont pas tous puissants. Ils ne sont pour l'instant capables de réaliser un projet complexe que si on le décompose en étapes simples. Et comme à un nouveau collègue, il faut leur donner des instructions claires sur notre façon de travailler. Même ChatGPT-100o ne saura pas lire dans vos pensées (on espère !).
 
 ## La clé pour ne pas se perdre : des fichiers d'instructions
 

@@ -117,5 +117,5 @@ Built-in handling for:
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by AI Swiss</sub>
+  <sub>Built with ❤️ by DV-Conseil</sub>
 </div>

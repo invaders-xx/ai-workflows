@@ -121,5 +121,5 @@ Check out the FAQ analysis workflow in `code_based/faq_analysis/`:
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by AI Swiss</sub>
+  <sub>Built with ❤️ by DV-Conseil</sub>
 </div>

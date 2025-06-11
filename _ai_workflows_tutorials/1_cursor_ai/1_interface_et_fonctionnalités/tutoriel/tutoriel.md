@@ -43,7 +43,7 @@ Pour une liste numérotée :
 Pour créer un lien, c'est comme une mini-équation :
 [Ce que les gens voient](l'adresse-du-lien)
 
-Par exemple : [Le site AI Swiss](https://www.a-i.swiss)
+Par exemple : [Le site DV-Conseil](https://www.a-i.swiss)
 
 ### Pour aller plus loin
 
@@ -62,11 +62,11 @@ Cursor évolue en parallèle de VS Code, bénéficiant de toutes ses fonctionnal
 
 Cursor est souvent perçu comme un outil réservé aux développeurs, mais on va vous prouver que c'est faux : si un outil est capable de gérer des milliers de fichiers de code interconnectés, de maintenir du contexte à travers des langages de programmation différents, et d'orchestrer des modifications cohérentes à grande échelle... ne serait-il pas parfait pour d'autres types de projets complexes ?
 
-Chez AI Swiss, nous sommes convaincus que Cursor est actuellement (en date du 2024-11-12) l'éditeur le plus puissant pour travailler avec l'IA, et nous allons vous montrer pourquoi.
+Chez DV-Conseil, nous sommes convaincus que Cursor est actuellement (en date du 2025-06-11) l'éditeur le plus puissant pour travailler avec l'IA, et nous allons vous montrer pourquoi.
 
 **Attention** :
 
-Cursor est **actuellement** (en date du 2024-11-12) l'outil le plus puissant pour travailler avec l'IA, mais le domaine évolue rapidement : [GitHub Copilot](https://github.com/features/copilot), lui aussi basé sur VS Code, offre une expérience qui s'approche de celle de Cursor et pourrait devenir un jour supérieure.
+Cursor est **actuellement** (en date du 2025-06-11) l'outil le plus puissant pour travailler avec l'IA, mais le domaine évolue rapidement : [GitHub Copilot](https://github.com/features/copilot), lui aussi basé sur VS Code, offre une expérience qui s'approche de celle de Cursor et pourrait devenir un jour supérieure.
 
 Rassurez-vous, les méthodes que nous allons explorer sont transposables sur n'importe quel outil.
 
@@ -96,7 +96,7 @@ Pour les utilisateurs de VS Code : vous pouvez importer vos paramètres existant
 
 ### Cursor AI, GitHub Copilot... : des outils puissants, oui, mais jamais gratuits
 
-Les modèles d'IA puissants comme Claude 3.5 Sonnet ou GPT-4o sont devenus de l'infrastructure de base pour les outils d'IA. Et toute infrastructure a un coût. Trois options s'offrent à vous (par ordre de recommandation) :
+Les modèles d'IA puissants comme Claude 4 Sonnet ou GPT-4o sont devenus de l'infrastructure de base pour les outils d'IA. Et toute infrastructure a un coût. Trois options s'offrent à vous (par ordre de recommandation) :
 
 1. **Cursor Pro**
    - USD 192.00 par an (soit USD 16.00 par mois)
@@ -129,7 +129,7 @@ Les détails :
 Le chat est devenu l'interface de base pour interagir avec l'IA. Pour l'utiliser sur Cursor :
 
 1. Ouvrez le chat avec `Ctrl/⌘ + Alt/Option + L` (L comme "Lumière suprême du savoir")
-2. Sélectionnez un modèle d'IA (chez AI Swiss, on a un faible pour `claude-3-5-sonnet`, en date du 2024-11-12)
+2. Sélectionnez un modèle d'IA (chez DV-Conseil, on a un faible pour `claude-4-sonnet`, en date du 2025-06-10)
 3. Posez une question (faites un "prompt")
 4. Validez avec `Enter` ou cliquez sur `Chat`
 
@@ -141,7 +141,7 @@ Plusieurs options sont disponibles pour chaque message :
 #### Exemple pratique
 
 1. Ouvrez le chat (`Ctrl/⌘ + Alt/Option + L`)
-2. Sélectionnez `claude-3-5-sonnet`
+2. Sélectionnez `claude-4-sonnet`
 3. Écrivez un prompt comme :
    "Quel est le sens de la vie, l'Univers et le reste ?"
 4. Observez la réponse.
@@ -188,12 +188,12 @@ Exemple de prompt :
 Ce rapport contient-il des éléments sur la Suisse ? @rapport_de_la_commission_de_l'ia_en_france.md
 ```
 
-Note : Cursor ne digère pas encore les PDF. Pour les utiliser, copiez leur contenu dans un fichier texte (.md par exemple).
+Note : Cursor ne digère pas encore les PDF. Pour les utiliser, copiez leur contenu dans un fichier texte (.md par exemple), ou utilisez un outil de conversion PDF vers Markdown (comme [Marker](https://github.com/VikParuchuri/marker))
 
 #### 2. Des pages web individuelles
 Tapez `@` suivi de l'URL :
 ```
-Quel est le prochain événement de AI Swiss? @https://www.a-i.swiss
+Quel est le prochain événement de DV-Conseil? @https://www.a-i.swiss
 ```
 
 Note : Cursor ne va pas explorer plus loin que la page mentionnée, donc choisissez bien ! C'est pareil sur ChatGPT.
@@ -201,10 +201,10 @@ Note : Cursor ne va pas explorer plus loin que la page mentionnée, donc choisis
 #### 3. Des sites web
 1. Tapez `@Docs`
 2. Cliquez sur `+ Add new doc`
-3. Entrez l'URL et un nom simple (exemple : `https://www.a-i.swiss` → `AI Swiss`)
+3. Entrez l'URL et un nom simple (exemple : `https://www.a-i.swiss` → `DV-Conseil`)
 
 ```
-Quel est le prochain événement de AI Swiss? @AI Swiss
+Quel est le prochain événement de DV-Conseil? @DV-Conseil
 ```
 
 Notes :

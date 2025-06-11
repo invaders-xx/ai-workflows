@@ -1,4 +1,4 @@
-# AI Tutorials by AI Swiss
+# AI Tutorials by DV-Conseil
 
 Welcome to our collection of professional-grade AI tutorials! These materials come from Brain2Brain.Lab sessions, where we transform complex AI concepts into practical, actionable knowledge.
 
@@ -30,7 +30,7 @@ Located in `3_ai_workflows_as_code/`
 Take your AI workflows to the next level with software engineering best practices. Learn to create maintainable, version-controlled, and scalable solutions that grow with your needs.
 
 **Start Here**: `3_ai_workflows_as_code/tutorial.md`  
-📺 **Watch Series**: [AI Swiss Channel](https://www.youtube.com/@A-Iswiss)
+📺 **Watch Series**: [DV-Conseil Channel](https://www.youtube.com/@A-Iswiss)
 
 ## 🎓 About Brain2Brain.Lab
 

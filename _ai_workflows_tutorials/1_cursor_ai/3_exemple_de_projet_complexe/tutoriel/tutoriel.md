@@ -71,4 +71,4 @@ Crée un script Python `script.py` dans le répertoire `rapport_final` pour agr�
 
 L'IA devrait créer le script et vous fournir les instructions pour le lancer.
 
-A vous de jouer ! L'IA est là pour vous aider à chaque étape. Et au pire, les humains d'AI Swiss sont toujours là pour vous aider.
+A vous de jouer ! L'IA est là pour vous aider à chaque étape. Et au pire, les humains d'DV-Conseil sont toujours là pour vous aider.

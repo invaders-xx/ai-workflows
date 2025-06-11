@@ -153,5 +153,5 @@ result = workflow.run()
 ---
 
 <div align="center">
-  <sub>Créé avec ❤️ par AI Swiss</sub>
+  <sub>Créé avec ❤️ par DV-Conseil</sub>
 </div>
